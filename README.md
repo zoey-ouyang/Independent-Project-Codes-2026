@@ -1,6 +1,6 @@
 # Reproducing Cquirrel on Apache Flink
 
-This repository contains an IP2026 course project that reproduces the main ideas of the paper **Cquirrel: Continuous Query Processing over Acyclic Relational Schemas** on top of Apache Flink.
+This repository contains an Independent Project course project that reproduces the main ideas of the paper **Cquirrel: Continuous Query Processing over Acyclic Relational Schemas** on top of Apache Flink.
 
 The project focuses on continuous query processing over acyclic primary-key / foreign-key schemas. It includes a correctness-oriented general maintenance prototype and a query-specific parallel Flink pipeline implementation for TPC-H Q3 and Q6.
 
