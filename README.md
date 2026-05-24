@@ -112,16 +112,7 @@ The four FK-DAG queries are not official numbered TPC-H queries. They are TPC-H-
     - `evaluation_tpch_supplier_revenue_sf001_sample.csv`
     - `multi_operator_q3_sf001_sample.csv`
     - `multi_operator_q6_sf001_sample.csv`
-
-### Report
-
-- `ip_report/`
-  - Contains the LaTeX source and generated PDF for the course report.
-  - `main.tex`: report source.
-  - `main.pdf`: compiled report.
-  - `fig/`: generated experiment figures.
-  - `experiment_summary.tex`: auto-generated LaTeX table rows from result CSV files.
-
+    - 
 ## Requirements
 
 - Java 8 or later
