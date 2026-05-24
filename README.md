@@ -235,26 +235,5 @@ scripts/run_multi_operator.sh
 
 The Q3 pipeline contains relation-specific filtering, keyed join maintenance, and revenue aggregation. The Q6 pipeline contains lineitem filtering and revenue aggregation.
 
-## Notes on DAG Direction
 
-The Cquirrel paper defines a foreign-key DAG edge from the relation containing the foreign key to the referenced primary-key relation. Internally, this implementation stores the schema graph in the reverse direction, from parent to child. This is an implementation choice for the correctness-oriented prototype: it makes live tuple recomputation simpler because a topological scan visits parent relations before child relations.
-
-Both representations describe the same acyclic primary-key / foreign-key join structure.
-
-## Limitations
-
-- The general prototype does not include a full SQL parser.
-- The general prototype recomputes live tuples and current answers after each update, so it is correctness-oriented rather than fully optimized.
-- The Q3/Q6 multi-operator jobs are query-specific and are not generated automatically from arbitrary SQL.
-- Full TPC-H Q1-Q22 benchmark execution is outside the current scope.
-
-## Citation
-
-The reproduced paper is:
-
-```text
-Q. Wang, C. Zhang, D. Alsayed, K. Yi, B. Wu, F. Li, and C. Zhan.
-"Cquirrel: Continuous Query Processing over Acyclic Relational Schemas."
-Proceedings of the VLDB Endowment, vol. 14, no. 12, pp. 2667-2670, 2021.
-doi: 10.14778/3476311.3476315
 ```
