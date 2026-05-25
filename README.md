@@ -1,4 +1,4 @@
-# Reproducing Cquirrel on Apache Flink
+# Reproducing Cquirrel: Continuous Query Processing over Acyclic Relational Schemas on Apache Flink
 
 This repository contains an Independent Project course project that reproduces the main ideas of the paper **Cquirrel: Continuous Query Processing over Acyclic Relational Schemas** on top of Apache Flink.
 
