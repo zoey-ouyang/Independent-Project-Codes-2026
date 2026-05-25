@@ -165,12 +165,3 @@ QUERY=Q6 TPCH_DIR=data/tpch-sf0.01 TPCH_LINEITEM_LIMIT=1000 \
 
 All commands above are expected to pass.
 
-## Remaining Stretch Goals
-
-These are useful for a stronger final report, but not required for the compact reproduction prototype:
-
-- parse SQL workload files automatically instead of constructing query plans in Java
-- run Flink cluster experiments with multiple parallelism levels
-- generate latency/throughput/memory plots automatically
-- evaluate checkpoint recovery behavior explicitly
-- generalize the Q3/Q6 multi-operator implementation into a QueryPlan-driven operator planner
